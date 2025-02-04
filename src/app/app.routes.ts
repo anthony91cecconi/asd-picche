@@ -4,6 +4,7 @@ import { ContattiComponent } from './pages/contatti/contatti.component';
 import { EventiComponent } from './pages/eventi/eventi.component';
 import { GalleriaComponent } from './pages/galleria/galleria.component';
 import { SquadreComponent } from './pages/squadre/squadre.component';
+import { ServiziComponent } from './pages/servizi/servizi.component';
 
 export const routes: Routes = [
   {
@@ -13,6 +14,10 @@ export const routes: Routes = [
   {
     path: "contatti",
     component: ContattiComponent
+  },
+  {
+    path: "servizi",
+    component: ServiziComponent
   },
   {
     path: "squadre",

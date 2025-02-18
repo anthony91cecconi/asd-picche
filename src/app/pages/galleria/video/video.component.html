@@ -1,0 +1,21 @@
+<div class="container my-4">
+  <h1 class="mb-4">Galleria Video</h1>
+  <div class="row">
+    <!-- Card per ogni album video -->
+    <div class="col-md-4 mb-4" *ngFor="let album of albums">
+      <div class="card h-100">
+        <div class="position-relative">
+          <img [src]="album.coverImage" class="card-img-top" alt="{{ album.title }}">
+          <span class="position-absolute top-50 start-50 translate-middle">
+            <i class="bi bi-play-circle-fill display-4 text-white"></i>
+          </span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ album.title }}</h5>
+          <p class="card-text">{{ album.description }}</p>
+          <a [routerLink]="['/galleria/video', album.id]"  class="btn btn-primary mt-auto">Guarda Video</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

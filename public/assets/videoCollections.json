@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Documentari",
+    "description": "Raccolta di documentari interessanti.",
+    "coverImage": "https://picsum.photos/seed/doc/300/200",
+    "videoIds": [1, 2]
+  },
+  {
+    "id": 2,
+    "title": "Tutorial",
+    "description": "Video tutorial per imparare nuove competenze.",
+    "coverImage": "https://picsum.photos/seed/tutorial/300/200",
+    "videoIds": [3, 4, 5]
+  }
+]

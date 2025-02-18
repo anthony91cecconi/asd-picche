@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "path": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "title": "Big Buck Bunny",
+    "description": "Un video demo per testare la riproduzione.",
+    "date": "2023-03-10",
+    "thumbnail": "https://via.placeholder.com/100x56"
+  },
+  {
+    "id": 2,
+    "path": "https://www.w3schools.com/html/movie.mp4",
+    "title": "Sample Video",
+    "description": "Video di esempio per la galleria.",
+    "date": "2023-03-11",
+    "thumbnail": "https://via.placeholder.com/100x56"
+  },
+  {
+    "id": 3,
+    "path": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "title": "Documentario 1",
+    "description": "Un breve documentario.",
+    "date": "2023-04-05",
+    "thumbnail": "https://via.placeholder.com/100x56"
+  },
+  {
+    "id": 4,
+    "path": "https://www.w3schools.com/html/movie.mp4",
+    "title": "Documentario 2",
+    "description": "Un altro video documentario.",
+    "date": "2023-04-10",
+    "thumbnail": "https://via.placeholder.com/100x56"
+  },
+  {
+    "id": 5,
+    "path": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "title": "Tutorial di Editing",
+    "description": "Tutorial per il montaggio video.",
+    "date": "2023-05-20",
+    "thumbnail": "https://via.placeholder.com/100x56"
+  }
+]

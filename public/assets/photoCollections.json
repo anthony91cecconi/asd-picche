@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Natura",
+    "description": "Album dedicato ai paesaggi e alla natura.",
+    "coverImage": "https://picsum.photos/seed/natura/300/200",
+    "imageIds": [1, 2, 3, 4]
+  },
+  {
+    "id": 2,
+    "title": "Città",
+    "description": "Scatti urbani e architettura moderna.",
+    "coverImage": "https://picsum.photos/seed/citta/300/200",
+    "imageIds": [5, 6, 7]
+  }
+]

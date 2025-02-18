@@ -1,0 +1,22 @@
+<div class="container my-4">
+  <h1 class="mb-4">{{ album?.title }}</h1>
+  <p>{{ album?.description }}</p>
+
+  <div class="carousel-container">
+    <button (click)="prevImage()" class="carousel-control prev">&lt;</button>
+
+    <img [src]="images[currentIndex]?.path" class="carousel-image" alt="{{ images[currentIndex]?.title }}">
+
+    <button (click)="nextImage()" class="carousel-control next">&gt;</button>
+  </div>
+
+  <div class="thumbnails mt-3">
+    <img *ngFor="let img of images; let i = index"
+         [src]="img.path"
+         [class.active]="i === currentIndex"
+         (click)="setImage(i)"
+         class="thumbnail">
+  </div>
+
+  <a routerLink="/galleria/foto" class="btn btn-secondary mt-3">Torna alla Galleria</a>
+</div>

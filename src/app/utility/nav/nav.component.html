@@ -18,10 +18,10 @@
             <li><a [routerLink]="['/eventi']" class="nav-link">Eventi</a></li>
             <li><a [routerLink]="['/contatti']" class="nav-link">Contatti</a></li>
             <li class="has-children">
-              <a [routerLink]="['/galleria']" class="nav-link">Galleria</a>
+              <a [routerLink]="['/galleria/foto']" class="nav-link">Galleria</a>
               <ul class="dropdown arrow-top">
-                <li><a href="#">Foto</a></li>
-                <li><a href="#">Video</a></li>
+                <li><a [routerLink]="['/galleria/foto']">Foto</a></li>
+                <li><a [routerLink]="['/galleria/video']">Video</a></li>
               </ul>
             </li>
           </ul>

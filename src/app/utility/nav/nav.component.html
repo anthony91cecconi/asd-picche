@@ -1,25 +1,41 @@
-<header class="site-navbar navbar navbar-expand-lg navbar-light bg-light js-sticky-header site-navbar-target">
+<header class="site-navbar navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand text-black a-brand" href="index.html">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
       <span class="text-primary">Brand</span>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <!-- Bottone per il menu mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Menu di navigazione -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a [routerLink]="['/home']" class="nav-link">Home</a></li>
-        <li class="nav-item"><a [routerLink]="['/servizi']" class="nav-link">Servizi</a></li>
-        <li class="nav-item"><a [routerLink]="['/squadre']" class="nav-link">Squadre</a></li>
-        <li class="nav-item"><a [routerLink]="['/eventi']" class="nav-link">Eventi</a></li>
-        <li class="nav-item"><a [routerLink]="['/contatti']" class="nav-link">Contatti</a></li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/servizi']">Servizi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/squadre']">Squadre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/eventi']">Eventi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contatti']">Contatti</a>
+        </li>
+        <!-- Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="galleriaDropdown" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="galleriaDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Galleria
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" aria-labelledby="galleriaDropdown">
             <li><a class="dropdown-item" [routerLink]="['/galleria/foto']">Foto</a></li>
             <li><a class="dropdown-item" [routerLink]="['/galleria/video']">Video</a></li>
           </ul>

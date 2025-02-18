@@ -1,1 +1,14 @@
-<p>squadre works!</p>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let squadra of squadre">
+      <div class="card">
+        <img [src]="squadra.immagine" class="card-img-top" alt="{{ squadra.nome }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ squadra.nome }}</h5>
+          <p class="card-text">Membri: {{ squadra.numeroMembri }}</p>
+          <a [routerLink]="['/squadra', squadra.id]" class="btn btn-primary">Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

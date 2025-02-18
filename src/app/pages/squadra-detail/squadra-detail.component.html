@@ -1,0 +1,65 @@
+<div class="team-detail container" *ngIf="squadra">
+  <!-- Sezione 1: Header -->
+  <section class="team-header my-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1>{{ squadra.nome }}</h1>
+        <p>Breve descrizione della squadra...</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img [src]="squadra.immagine" alt="{{ squadra.nome }}" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione 2: Carousel -->
+  <section class="team-carousel my-4">
+    <div class="d-flex justify-content-center align-items-center position-relative">
+      <button
+        class="btn btn-outline-primary carousel-btn prev position-absolute start-0"
+        (click)="prevImage()"
+      >
+        ‹
+      </button>
+      <div class="carousel-image mx-5">
+        <img
+          [src]="carouselImages[currentImageIndex]"
+          alt="Carousel image"
+          class="img-fluid"
+        />
+      </div>
+      <button
+        class="btn btn-outline-primary carousel-btn next position-absolute end-0"
+        (click)="nextImage()"
+      >
+        ›
+      </button>
+    </div>
+  </section>
+
+  <!-- Sezione 3: Lista Membri -->
+  <section class="team-members my-4">
+    <h2>Membri della Squadra</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let member of squadra.membri">
+        {{ member }}
+      </li>
+    </ul>
+  </section>
+
+  <!-- Sezione 4: Calendario -->
+  <section class="team-calendar my-4">
+    <div class="calendar-header d-flex justify-content-between align-items-center mb-3">
+      <button class="btn btn-outline-secondary" (click)="prevMonth()">‹</button>
+      <h3 class="mb-0">{{ monthNames[currentMonth] }} {{ currentYear }}</h3>
+      <button class="btn btn-outline-secondary" (click)="nextMonth()">›</button>
+    </div>
+    <div class="calendar-grid row">
+      <div class="col-2 col-sm-1 p-1" *ngFor="let day of daysInMonth">
+        <div class="day text-center border py-2">
+          {{ day }}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

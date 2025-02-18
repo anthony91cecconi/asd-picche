@@ -5,6 +5,7 @@ import { EventiComponent } from './pages/eventi/eventi.component';
 import { GalleriaComponent } from './pages/galleria/galleria.component';
 import { SquadreComponent } from './pages/squadre/squadre.component';
 import { ServiziComponent } from './pages/servizi/servizi.component';
+import { SquadraDetailComponent } from './pages/squadra-detail/squadra-detail.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +31,10 @@ export const routes: Routes = [
   {
     path: "galleria",
     component: GalleriaComponent
+  },
+  {
+    path: 'squadra/:id',
+    component: SquadraDetailComponent
   },
   {
     path: "**",
